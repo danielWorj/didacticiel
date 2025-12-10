@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prévention Cancer du Sein - Jeunes 15-25 ans</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(135deg, var(--secondary), var(--primary));">
+        <div class="container">
+            <a class="navbar-brand" href="#accueil">
+                <i class="fas fa-ribbon"></i> ECourse
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accueil"><i class="fas fa-home"></i> Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#module1"><i class="fas fa-info-circle"></i> Comprendre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#module2"><i class="fas fa-shield-alt"></i> Prévention</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#module3"><i class="fas fa-hand-paper"></i> Auto-examen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#module4"><i class="fas fa-stethoscope"></i> Dépistage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#module5"><i class="fas fa-clipboard-check"></i> Mon Plan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ressources"><i class="fas fa-book"></i> Ressources</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="hero">
+        <div class="container">
+            <h1><i class="fas fa-ribbon"></i> Prévention du Cancer du Sein</h1>
+            <p class="lead">Guide interactif pour les jeunes de 15 à 25 ans</p>
+            <p><i class="fas fa-users"></i> Apprends les gestes essentiels pour protéger ta santé</p>
+        </div>
+    </div>
+
+    <div class="progress-container">
+        <div class="container">
+            <h6>Progression du cours</h6>
+            <div class="progress" style="height: 25px;">
+                <div id="mainProgress" class="progress-bar bg-success" role="progressbar" style="width: 0%">0%</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <!-- Module 1: Introduction -->
+        <div class="module-card" data-module="1">
+            <div class="module-header">
+                <div class="module-icon"><i class="fas fa-info-circle"></i></div>
+                <div>
+                    <h2>Module 1: Comprendre le Cancer du Sein</h2>
+                    <p class="text-muted">Bases essentielles et statistiques</p>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="stat-card">
+                        <div class="stat-number">1/8</div>
+                        <p>Femmes touchées dans leur vie</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-card">
+                        <div class="stat-number">90%</div>
+                        <p>Taux de survie si détecté tôt</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-card">
+                        <div class="stat-number">25%</div>
+                        <p>Cas avant 50 ans</p>
+                    </div>
+                </div>
+            </div>
+
+            <h4><i class="fas fa-question-circle"></i> Qu'est-ce que le cancer du sein?</h4>
+            <p>Le cancer du sein est une maladie où des cellules anormales se développent de manière incontrôlée dans les tissus mammaires. Bien qu'il soit plus fréquent chez les femmes de plus de 50 ans, les jeunes femmes peuvent également être concernées.</p>
+
+            <div class="tip-box">
+                <h5><i class="fas fa-lightbulb"></i> Le savais-tu?</h5>
+                <p>Les hommes peuvent aussi développer un cancer du sein, bien que ce soit rare (moins de 1% des cas).</p>
+            </div>
+
+            <h4 class="mt-4"><i class="fas fa-dna"></i> Facteurs de risque</h4>
+            <ul class="list-group">
+                <li class="list-group-item"><i class="fas fa-check text-success"></i> Antécédents familiaux (génétique)</li>
+                <li class="list-group-item"><i class="fas fa-check text-success"></i> Mutations génétiques (BRCA1, BRCA2)</li>
+                <li class="list-group-item"><i class="fas fa-check text-success"></i> Premières règles précoces (avant 12 ans)</li>
+                <li class="list-group-item"><i class="fas fa-check text-success"></i> Exposition aux hormones</li>
+                <li class="list-group-item"><i class="fas fa-check text-success"></i> Mode de vie (alcool, tabac, sédentarité)</li>
+            </ul>
+
+            <div class="quiz-section mt-4">
+                <h5><i class="fas fa-graduation-cap"></i> Quiz - Module 1</h5>
+                <p><strong>Question: Quel est le taux de survie du cancer du sein détecté précocement?</strong></p>
+                <div class="quiz-option" data-answer="correct" data-module="1">
+                    A) 90% ou plus
+                </div>
+                <div class="quiz-option" data-answer="incorrect" data-module="1">
+                    B) 50%
+                </div>
+                <div class="quiz-option" data-answer="incorrect" data-module="1">
+                    C) 70%
+                </div>
+                <div id="feedback-1" class="alert mt-3 hidden"></div>
+            </div>
+
+            <button class="btn btn-custom mt-3" onclick="completeModule(1)">
+                <i class="fas fa-check"></i> Marquer comme terminé
+            </button>
+        </div>
+
+        <!-- Module 2: Prévention -->
+        <div class="module-card" data-module="2">
+            <div class="module-header">
+                <div class="module-icon"><i class="fas fa-shield-alt"></i></div>
+                <div>
+                    <h2>Module 2: Mesures de Prévention</h2>
+                    <p class="text-muted">Actions concrètes pour réduire les risques</p>
+                </div>
+            </div>
+
+            <h4><i class="fas fa-running"></i> 1. Adopte un Mode de Vie Sain</h4>
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5><i class="fas fa-apple-alt text-success"></i> Alimentation</h5>
+                            <ul>
+                                <li>Consomme des fruits et légumes quotidiennement</li>
+                                <li>Privilégie les aliments riches en fibres</li>
+                                <li>Limite les graisses saturées</li>
+                                <li>Évite l'alcool ou consomme avec modération</li>
+                                <li>Réduis les aliments transformés</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5><i class="fas fa-heartbeat text-danger"></i> Activité Physique</h5>
+                            <ul>
+                                <li>30 minutes d'exercice par jour minimum</li>
+                                <li>Sports d'équipe ou individuels</li>
+                                <li>Marche, course, natation, danse</li>
+                                <li>Évite la sédentarité prolongée</li>
+                                <li>Intègre l'activité dans ton quotidien</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4><i class="fas fa-weight"></i> 2. Maintiens un Poids Santé</h4>
+            <p>Le surpoids et l'obésité augmentent le risque de cancer du sein, surtout après la ménopause. À ton âge, prends de bonnes habitudes:</p>
+            <ul>
+                <li>Équilibre entre calories consommées et dépensées</li>
+                <li>Évite les régimes extrêmes</li>
+                <li>Consulte un professionnel si besoin</li>
+            </ul>
+
+            <h4><i class="fas fa-ban"></i> 3. Évite les Substances Nocives</h4>
+            <div class="alert alert-warning">
+                <h5><i class="fas fa-exclamation-triangle"></i> Attention!</h5>
+                <ul class="mb-0">
+                    <li><strong>Tabac:</strong> Augmente significativement le risque de cancers</li>
+                    <li><strong>Alcool:</strong> Même en faible quantité, il est lié au cancer du sein</li>
+                    <li><strong>Drogues:</strong> Perturbent l'organisme et affaiblissent le système immunitaire</li>
+                </ul>
+            </div>
+
+            <h4><i class="fas fa-moon"></i> 4. Prends Soin de ton Sommeil</h4>
+            <p>Un sommeil de qualité (7-9h par nuit) aide ton corps à se régénérer et renforce ton système immunitaire.</p>
+
+            <h4><i class="fas fa-pills"></i> 5. Contraception et Hormones</h4>
+            <p>Si tu utilises une contraception hormonale, discute des risques et bénéfices avec ton médecin. L'utilisation prolongée peut légèrement augmenter le risque.</p>
+
+            <div class="tip-box">
+                <h5><i class="fas fa-heart"></i> Conseil Important</h5>
+                <p>L'allaitement maternel (futur) peut réduire le risque de cancer du sein. C'est bon à savoir pour plus tard!</p>
+            </div>
+
+            <div class="quiz-section mt-4">
+                <h5><i class="fas fa-graduation-cap"></i> Quiz - Module 2</h5>
+                <p><strong>Question: Combien de minutes d'activité physique sont recommandées par jour?</strong></p>
+                <div class="quiz-option" data-answer="incorrect" data-module="2">
+                    A) 15 minutes
+                </div>
+                <div class="quiz-option" data-answer="correct" data-module="2">
+                    B) 30 minutes minimum
+                </div>
+                <div class="quiz-option" data-answer="incorrect" data-module="2">
+                    C) 60 minutes obligatoires
+                </div>
+                <div id="feedback-2" class="alert mt-3 hidden"></div>
+            </div>
+
+            <button class="btn btn-custom mt-3" onclick="completeModule(2)">
+                <i class="fas fa-check"></i> Marquer comme terminé
+            </button>
+        </div>
+
+        <!-- Module 3: Auto-examen -->
+        <div class="module-card" data-module="3">
+            <div class="module-header">
+                <div class="module-icon"><i class="fas fa-hand-paper"></i></div>
+                <div>
+                    <h2>Module 3: L'Auto-examen des Seins</h2>
+                    <p class="text-muted">Apprends à connaître ton corps</p>
+                </div>
+            </div>
+
+            <div class="alert alert-info">
+                <h5><i class="fas fa-info-circle"></i> Pourquoi l'auto-examen?</h5>
+                <p class="mb-0">L'auto-examen mensuel permet de détecter précocement toute anomalie. Plus tu connais ton corps, plus tu pourras repérer un changement inhabituel.</p>
+            </div>
+
+            <h4><i class="fas fa-calendar-alt"></i> Quand faire l'auto-examen?</h4>
+            <ul>
+                <li><strong>Si tu as tes règles:</strong> 3-5 jours après la fin de tes règles (seins moins sensibles)</li>
+                <li><strong>Si tu n'as pas de règles:</strong> Choisis un jour fixe chaque mois</li>
+                <li><strong>Fréquence:</strong> Une fois par mois, pas plus</li>
+            </ul>
+
+            <h4><i class="fas fa-procedures"></i> Comment faire l'auto-examen?</h4>
+            
+            <div class="accordion" id="examAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#step1">
+                            <strong>Étape 1: Observation devant le miroir</strong>
+                        </button>
+                    </h2>
+                    <div id="step1" class="accordion-collapse collapse show" data-bs-parent="#examAccordion">
+                        <div class="accordion-body">
+                            <ol>
+                                <li>Mets-toi torse nu devant un miroir, bras le long du corps</li>
+                                <li>Observe la taille, la forme et la couleur de tes seins</li>
+                                <li>Recherche des changements visibles: fossettes, rides, gonflement</li>
+                                <li>Vérifie si les mamelons sont tournés vers l'intérieur</li>
+                                <li>Lève les bras au-dessus de la tête et observe à nouveau</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step2">
+                            <strong>Étape 2: Palpation debout ou sous la douche</strong>
+                        </button>
+                    </h2>
+                    <div id="step2" class="accordion-collapse collapse" data-bs-parent="#examAccordion">
+                        <div class="accordion-body">
+                            <ol>
+                                <li>Utilise la main droite pour examiner le sein gauche et vice-versa</li>
+                                <li>Utilise le bout des doigts (pas la paume)</li>
+                                <li>Fais des mouvements circulaires fermes et doux</li>
+                                <li>Couvre tout le sein du haut vers le bas, de l'extérieur vers le centre</li>
+                                <li>Palpe aussi sous les aisselles</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step3">
+                            <strong>Étape 3: Palpation allongée</strong>
+                        </button>
+                    </h2>
+                    <div id="step3" class="accordion-collapse collapse" data-bs-parent="#examAccordion">
+                        <div class="accordion-body">
+                            <ol>
+                                <li>Allonge-toi sur le dos</li>
+                                <li>Place un coussin sous l'épaule droite</li>
+                                <li>Mets la main droite derrière la tête</li>
+                                <li>Avec la main gauche, palpe le sein droit</li>
+                                <li>Utilise les mêmes mouvements circulaires qu'à l'étape 2</li>
+                                <li>Répète de l'autre côté</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="mt-4"><i class="fas fa-search"></i> Que rechercher?</h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="alert alert-warning">
+                        <h6><i class="fas fa-exclamation-circle"></i> Signes à surveiller:</h6>
+                        <ul class="mb-0">
+                            <li>Une bosse ou épaississement</li>
+                            <li>Changement de taille ou forme</li>
+                            <li>Écoulement du mamelon</li>
+                            <li>Rétraction du mamelon</li>
+                            <li>Rougeur ou peau d'orange</li>
+                            <li>Douleur persistante</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="alert alert-success">
+                        <h6><i class="fas fa-check-circle"></i> Important à savoir:</h6>
+                        <ul class="mb-0">
+                            <li>La plupart des bosses ne sont PAS cancéreuses</li>
+                            <li>Les seins changent naturellement</li>
+                            <li>Ne panique pas, consulte un médecin</li>
+                            <li>Mieux vaut vérifier que s'inquiéter seule</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-placeholder">
+                <i class="fas fa-video fa-3x text-muted mb-3"></i>
+                <p class="text-muted">Vidéo démonstrative: Technique d'auto-examen<br>(À intégrer selon disponibilité)</p>
+            </div>
+
+            <div class="quiz-section mt-4">
+                <h5><i class="fas fa-graduation-cap"></i> Quiz - Module 3</h5>
+                <p><strong>Question: Quelle est la meilleure période pour l'auto-examen si tu as tes règles?</strong></p>
+                <div class="quiz-option" data-answer="incorrect" data-module="3">
+                    A) Pendant les règles
+                </div>
+                <div class="quiz-option" data-answer="correct" data-module="3">
+                    B) 3-5 jours après la fin des règles
+                </div>
+                <div class="quiz-option" data-answer="incorrect" data-module="3">
+                    C) Juste avant les règles
+                </div>
+                <div id="feedback-3" class="alert mt-3 hidden"></div>
+            </div>
+
+            <button class="btn btn-custom mt-3" onclick="completeModule(3)">
+                <i class="fas fa-check"></i> Marquer comme terminé
+            </button>
+        </div>
+
+        <!-- Module 4: Dépistage médical -->
+        <div class="module-card" data-module="4">
+            <div class="module-header">
+                <div class="module-icon"><i class="fas fa-stethoscope"></i></div>
+                <div>
+                    <h2>Module 4: Dépistage Médical</h2>
+                    <p class="text-muted">Quand consulter un professionnel?</p>
+                </div>
+            </div>
+
+            <h4><i class="fas fa-user-md"></i> Consultations Régulières</h4>
+            <p>Même jeune, il est important d'avoir un suivi médical régulier:</p>
+            <ul>
+                <li><strong>Examen clinique:</strong> Par un médecin ou gynécologue une fois par an</li>
+                <li><strong>Discussion:</strong> Parle de tes antécédents familiaux</li>
+                <li><strong>Conseils:</strong> Reçois des recommandations personnalisées</li>
+            </ul>
+
+            <h4><i class="fas fa-x-ray"></i> Mammographie et Échographie</h4>
+            <div class="alert alert-info">
+                <p><strong>Pour les 15-25 ans:</strong> La mammographie n'est généralement PAS recommandée à cet âge, sauf cas particuliers (antécédents familiaux importants, mutations génétiques).</p>
+                <p class="mb-0"><strong>Échographie mammaire:</strong> Plus adaptée pour les jeunes femmes si une anomalie est détectée.</p>
+            </div>
+
+            <h4><i class="fas fa-exclamation-triangle"></i> Quand Consulter en Urgence?</h4>
+            <div class="checklist-item">
+                <input type="checkbox" disabled>
+                <span>Découverte d'une bosse ou masse inhabituelle</span>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" disabled>
+                <span>Écoulement anormal du mamelon (surtout si sanglant)</span>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" disabled>
+                <span>Changement important de la forme ou taille d'un sein</span>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" disabled>
+                <span>Rougeur, chaleur ou peau d'orange persistante</span>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" disabled>
+                <span>Douleur persistante et localisée</span>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" disabled>
+                <span>Rétraction du mamelon ou de la peau</span>
+            </div>
+
+            <div class="tip-box">
+                <h5><i class="fas fa-heart"></i> N'aie pas peur de consulter!</h5>
+                <p class="mb-0">Les médecins sont là pour t'aider. Il vaut mieux consulter pour rien que de laisser passer quelque chose d'important. La plupart du temps, les anomalies sont bénignes.</p>
+            </div>
+
+            <h4><i class="fas fa-dna"></i> Tests Génétiques</h4>
+            <p>Si tu as des antécédents familiaux importants de cancer du sein (plusieurs cas dans la famille, cas jeunes), discute avec ton médecin de:</p>
+            <ul>
+                <li>Conseil génétique</li>
+                <li>Tests pour mutations BRCA1/BRCA2</li>
+                <li>Surveillance adaptée si nécessaire</li>
+            </ul>
+
+            <div class="quiz-section mt-4">
+                <h5><i class="fas fa-graduation-cap"></i> Quiz - Module 4</h5>
+                <p><strong>Question: La mammographie est-elle recommandée systématiquement pour les 15-25 ans?</strong></p>
+                <div class="quiz-option" data-answer="incorrect" data-module="4">
+                    A) Oui, une fois par an
+                </div>
+                <div class="quiz-option" data-answer="correct" data-module="4">
+                    B) Non, sauf cas particuliers
+                </div>
+                <div class="quiz-option" data-answer="incorrect" data-module="4">
+                    C) Oui, dès 15 ans
+                </div>
+                <div id="feedback-4" class="alert mt-3 hidden"></div>
+            </div>
+
+            <button class="btn btn-custom mt-3" onclick="completeModule(4)">
+                <i class="fas fa-check"></i> Marquer comme terminé
+            </button>
+        </div>
+
+        <!-- Module 5: Plan d'action personnel -->
+        <div class="module-card" data-module="5">
+            <div class="module-header">
+                <div class="module-icon"><i class="fas fa-clipboard-check"></i></div>
+                <div>
+                    <h2>Module 5: Mon Plan d'Action Personnel</h2>
+                    <p class="text-muted">Engagements concrets pour ma santé</p>
+                </div>
+            </div>
+
+            <h4><i class="fas fa-tasks"></i> Ma Checklist Mensuelle</h4>
+            <p>Coche les actions que tu t'engages à faire chaque mois:</p>
+            
+            <div class="checklist-item">
+                <input type="checkbox" id="check1" onchange="saveProgress()">
+                <label for="check1">Pratiquer l'auto-examen des seins</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="check2" onchange="saveProgress()">
+                <label for="check2">Faire 30 minutes d'exercice par jour</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="check3" onchange="saveProgress()">
+                <label for="check3">Consommer 5 fruits et légumes par jour</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="check4" onchange="saveProgress()">
+                <label for="check4">Limiter/éviter l'alcool</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="check5" onchange="saveProgress()">
+                <label for="check5">Ne pas fumer</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="check6" onchange="saveProgress()">
+                <label for="check6">Avoir un sommeil de qualité (7-9h)</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="check7" onchange="saveProgress()">
+                <label for="check7">Consulter un professionnel de santé une fois par an</label>
+            </div>
+            <button class="btn btn-custom mt-3" onclick="completeModule(5)">
+                <i class="fas fa-check"></i> Marquer comme terminé
+            </button>
+        </div>
+    </div>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
